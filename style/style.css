@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'goblin';
-    src: url('/style/font/GoblinOne-Regular.ttf'), format('truetype');
+    src: url('font/GoblinOne-Regular.ttf'), format('truetype');
 }
 @font-face {
     font-family: 'roboto';
-    src: url('/style/font/Roboto-VariableFont_wdth\,wght.ttf'), format('truetype');
+    src: url('font/Roboto-VariableFont_wdth\,wght.ttf'), format('truetype');
 }
 
 * {
