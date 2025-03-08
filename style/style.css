@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'roboto';
-    src: url('font/Roboto-VariableFont_wdth\,wght.ttf'), format('truetype');
+    src: url('font/Roboto-VariableFont_wdth,wght.ttf'), format('truetype');
 }
 
 * {
