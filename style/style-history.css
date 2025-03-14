@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'goblin';
-    src: url(''), format('truetype');
+    src: url('/font/GoblinOne-Regular.ttf'), format('truetype');
 }
 @font-face {
     font-family: 'roboto';
