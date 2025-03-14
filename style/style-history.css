@@ -31,6 +31,7 @@ body {
     background-attachment: fixed;
 }
 header {
+    min-width: 320px;
     height: 120px;
     background-image: linear-gradient(to right, #AE2F1E, #367F78);
     padding: 10px;
@@ -46,6 +47,7 @@ header p {
     text-shadow: 0px 1px 6px white;
 }
 nav {
+    min-width: 320px;
     box-shadow: 0px 2px 10px black;
     padding: 0px 20px;
     background-image: linear-gradient(to right, #AE2F1E, #367F78);
