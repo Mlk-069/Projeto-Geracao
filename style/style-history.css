@@ -26,7 +26,6 @@
     --font-especial2: 'roboto';
 }
 body {
-    background-color: #e4a396;
     background-image: url('image/pattern004.png');
     background-attachment: fixed;
 }
