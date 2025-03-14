@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'goblin';
-    src: url('font/GoblinOne-Regular.ttf'), format('truetype');
+    src: url(''), format('truetype');
 }
 @font-face {
     font-family: 'roboto';
@@ -26,7 +26,9 @@
     --font-especial2: 'roboto';
 }
 body {
-    background-color: #ee8e7b;
+    background-color: #e4a396;
+    background-image: url('/image/pattern004.png');
+    background-attachment: fixed;
 }
 header {
     height: 120px;
@@ -65,6 +67,8 @@ nav a:hover {
 }
 
 main {
+    background-position: center;
+    background-attachment: fixed;
     border-radius: 5px 5px 5px 5px  ;
     text-align: justify;
     text-indent: 20px;
@@ -75,6 +79,7 @@ main {
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.699);
 }
 main p {
+    font-family: var(--fonte-padrao);
     padding-bottom: 10px;
 }
 main article {
@@ -84,6 +89,7 @@ main article {
     box-shadow: 0px 2px 10px black;
 }
 main ul{
+    font-family: var(--fonte-padrao);
     list-style: inside;
     
 }
@@ -112,7 +118,7 @@ li#last{
     padding-bottom: 3px;
 }
 footer {
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.63);
     color: white;
     max-width: 900px;
     margin: auto;
