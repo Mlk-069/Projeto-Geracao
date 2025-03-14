@@ -27,7 +27,7 @@
 }
 body {
     background-color: #e4a396;
-    background-image: url('/image/pattern004.png');
+    background-image: url('image/pattern004.png');
     background-attachment: fixed;
 }
 header {
