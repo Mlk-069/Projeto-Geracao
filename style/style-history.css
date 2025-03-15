@@ -26,8 +26,8 @@
     --font-especial2: 'roboto';
 }
 body {
-    background-color: var(--cor4);
-    background-image: url('');
+    opacity: 10px;
+    background-image: url('/image/wallpaper-midia.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
 }
