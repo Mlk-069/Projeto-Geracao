@@ -26,14 +26,12 @@
     --font-especial2: 'roboto';
 }
 body {
-    background-repeat: repeat;
+    
+    background-attachment: fixed;
     background-position: center;
     background-image: url('/image/pattern004.png');
-    background-attachment: fixed;
 }
 header {
-    min-width: 320px;
-    height: 120px;
     background-image: linear-gradient(to right, #AE2F1E, #367F78);
     padding: 10px;
     color: white;
