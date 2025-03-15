@@ -26,6 +26,8 @@
     --font-especial2: 'roboto';
 }
 body {
+    background-repeat: repeat;
+    background-position: center;
     background-image: url('/image/pattern004.png');
     background-attachment: fixed;
 }
