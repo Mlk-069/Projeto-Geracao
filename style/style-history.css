@@ -28,6 +28,7 @@
 body {
     opacity: 10px;
     background-image: url('/image/wallpaper-midia.jpg');
+    background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
 }
