@@ -26,11 +26,8 @@
     --font-especial2: 'roboto';
 }
 body {
-    opacity: 10px;
-    background-image: url('/image/wallpaper-midia.jpg');
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
+    background-image: url('');
+
 }
 header {
     background-image: linear-gradient(to right, #AE2F1E, #367F78);
@@ -69,8 +66,6 @@ nav a:hover {
 }
 
 main {
-    background-position: center;
-    background-attachment: fixed;
     border-radius: 5px 5px 5px 5px  ;
     text-align: justify;
     text-indent: 20px;
