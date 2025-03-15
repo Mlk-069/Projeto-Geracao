@@ -26,10 +26,10 @@
     --font-especial2: 'roboto';
 }
 body {
-    
+    background-color: var(--cor6);
     background-attachment: fixed;
     background-position: center;
-    background-image: url('/image/pattern004.png');
+    background-image: url('');
 }
 header {
     background-image: linear-gradient(to right, #AE2F1E, #367F78);
@@ -86,7 +86,8 @@ main p {
 main article {
     border-radius: 10px;
     background-attachment: fixed;
-    background-image: url('/image/pattern004.png');
+    background-color: var(--cor6);
+    background-image: url('');
     columns: 2;
     box-shadow: 0px 2px 10px black;
 }
