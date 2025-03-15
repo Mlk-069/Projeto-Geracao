@@ -26,8 +26,8 @@
     --font-especial2: 'roboto';
 }
 body {
+    background-repeat: repeat;
     background-attachment: fixed;
-    background-position: center;
     background-image: url('/image/instagram.png');
 }
 header {
