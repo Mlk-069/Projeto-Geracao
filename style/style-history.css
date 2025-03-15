@@ -85,7 +85,8 @@ main p {
 }
 main article {
     border-radius: 10px;
-    background-color: #e4a396;
+    background-attachment: fixed;
+    background-image: url('/image/pattern004.png');
     columns: 2;
     box-shadow: 0px 2px 10px black;
 }
