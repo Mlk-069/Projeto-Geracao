@@ -4,3 +4,15 @@
     margin: 0px;
     padding: 0px;
 }
+header {
+    background: gray;
+}
+nav {
+    background: gray;
+    text-align: right;
+    padding: 0px 15px;
+}
+a {
+    padding: 0px 15px;
+}
+
