@@ -1,18 +1,75 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'neuton';
+    src: url('/font/Neuton-ExtraBold.ttf'), url('/font/Neuton-Italic.ttf'), format('truetype');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('/font/Roboto-VariableFont_wdth,wght.ttf'), format('truetype');
+}
+:root {
+    --cor1: #AE2F1E ;
+    --cor2: #F15D3F;
+    --cor3: #367F78;
+    --cor4: #DDC058;
+    --cor5: #FECB01;
+    --cor6: #e4a396;
+    
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-especial-1: 'neuton';
+    --font-especial-2: 'roboto';
+}
 * {
     margin: 0px;
     padding: 0px;
 }
+body{
+    flex-wrap: wrap;
+    display: flex;
+}
+header, h1, nav, main, aside, article, section, footer {
+    display: flex;
+}
 header {
-    background: gray;
+    flex: 1 1 40vw;
+    background: grey;
+    font-family: var(--font-especial-1);
+    color: rgba(0, 0, 0, 0.863);
+    height: 70px;
+    align-items:  center;
+    font-style: italic;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.541);
 }
-nav {
-    background: gray;
-    text-align: right;
-    padding: 0px 15px;
+nav{
+    flex: 1 1 60vw;
+    background: grey;
+    font-family: var(--font-especial-2);
+    height: 70px;
+    align-items: center;
+    justify-content: end;
 }
-a {
-    padding: 0px 15px;
+a.navegacao{
+    color: rgba(0, 0, 0, 0.829);
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.514);
+    text-decoration: none;
+    transition-duration: .9s;
 }
-
+a.navegacao:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.575);
+    box-shadow: 0px 2px 10px white;
+    text-shadow: 0px 2px 10px white;
+}
+@media screen and (max-width: 875px){
+    header{
+        flex: 1 1 100vw;
+    }
+    nav{
+        flex: 1 1 100vw;
+    }
+}

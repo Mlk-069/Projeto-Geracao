@@ -56,12 +56,13 @@ header, h1, nav, main, aside, article, section, footer {
 header {
     margin: 0px 0px;
     font-family: var(--font-especial-1);
-    color: white;
+    color: rgba(0, 0, 0, 0.863);
     flex: 1 1 20vw;
     height: 70px;
     align-items:  center;
     font-style: italic;
     padding: 10px;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.541);
 }
 nav{
     font-family: var(--font-especial-2);
@@ -73,17 +74,19 @@ nav{
     margin: 0px;
 }
 a.navegacao{
-    color: white;
-    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.829);
+    font-weight: bold;
     padding: 5px 15px;
     border-radius: 10px;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.514);
     text-decoration: none;
-    transition-duration: .8s;
+    transition-duration: .9s;
 }
 a.navegacao:hover {
-    color: black;
-    background: white;
+    color: white;
+    background: rgba(0, 0, 0, 0.575);
     box-shadow: 0px 2px 10px white;
+    text-shadow: 0px 2px 10px white;
 }
 
 main{
