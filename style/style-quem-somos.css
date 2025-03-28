@@ -29,12 +29,12 @@
     padding: 0px;
 }
 :root {
-    --cor1: #AE2F1E ;
-    --cor2: #F15D3F;
-    --cor3: #367F78;
-    --cor4: #DDC058;
-    --cor5: #FECB01;
-    --cor6: #e4a396;
+    --cor1: white;
+    --cor2: black;
+    --cor3: ;
+    --cor4: ;
+    --cor5: ;
+    --cor6: ;
     
     --font-padrao: Arial, Helvetica, sans-serif;
     --font-especial-1: 'neuton';
@@ -45,18 +45,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     text-indent: 20px;
-    background-image: url('/image/body-background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
+    background: rgb(73, 24, 24);
 }
 header, h1, nav, main, aside, article, section, footer {
     display: flex;
-    margin: 3px; 
+    margin: 0px; 
 }
 header {
     margin: 0px 0px;
     font-family: var(--font-especial-1);
-    color: rgba(0, 0, 0, 0.863);
+    color:var(--cor1);
     flex: 1 1 20vw;
     height: 70px;
     align-items:  center;
@@ -74,7 +72,7 @@ nav{
     margin: 0px;
 }
 a.navegacao{
-    color: rgba(0, 0, 0, 0.829);
+    color: var(--cor1);
     font-weight: bold;
     padding: 5px 15px;
     border-radius: 10px;
@@ -83,69 +81,83 @@ a.navegacao{
     transition-duration: .9s;
 }
 a.navegacao:hover {
-    color: white;
-    background: rgba(0, 0, 0, 0.575);
-    box-shadow: 0px 2px 10px white;
-    text-shadow: 0px 2px 10px white;
+    color: var(--cor2);
+    background: var(--cor1);
+    box-shadow: 0px 2px 10px var(--cor2);
+    text-shadow: 0px 2px 10px var(--cor2);
 }
-
 main{
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+section#conteudo{
+    background: rgb(240, 235, 235);
     margin: 0px;
-    flex: 20 7 40vw;
-    height: 100vh; 
+    flex: 20 7 50vw;
+    height: 91vh; 
     text-align: justify;
     align-items: center;
     padding: 10px;
-    
 }
 img#banda{
     flex: 20 1 30vw;
     height: 93vh;
-    margin: 10px;
+    margin: 3px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.637);
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
-aside{
-    flex: 10 1 90vh;
+section#finalizacao{
+    padding: 10px;
+    background: rgb(240, 235, 235);
+    flex: 10 1 100vw;
 }
 article{
-    background: rgba(0, 0, 0, 0.39);
+    background: rgb(220, 209, 209);
     height: 200px;
     flex: 2 1 80vw;
     justify-content: space-around;
-    border-radius: 10px;
     align-items: center;
 }
-
-footer{
-    animation: rodape 10s;
-    animation-iteration-count: infinite;
-    height: 50px;
+nav.rodape{
     flex: 1 1 100vw;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    animation: rodape 15s;
+    animation-iteration-count: infinite;
 }
-footer p{
-    flex: 2 0 100vw;
+.rodape > a:hover{
+    opacity: 80%;
 }
-footer nav#redes-socias{
-    flex: 2 0 100vw;
-}
-footer > nav > a {    
-    padding: 10px 50px;
-}
-footer > nav > a:hover{
-    padding: 0px 20px 30px 20px;
-}
+
 @media  screen and (max-width: 885px){
-    
+    body{
+        display: flex;
+        flex-wrap: wrap;
+    }
     header{
         width: 30vw;
         height: 70px;
     }
     main{
         height: 100vh;
+        width: 100vw;
         margin-top: 35px;
         flex-shrink: 10;
     }
+    
+    img#banda{
+        width: 90vw;
+        flex: 1 1 100vw;
+        margin: 3px;
+        padding: 0px;
+    }
+    footer{
+        width: 100vw;
+        height: 100px;
+    }
+    
 
 }

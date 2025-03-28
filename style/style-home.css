@@ -59,6 +59,7 @@ a.navegacao{
     text-decoration: none;
     transition-duration: .9s;
 }
+
 a.navegacao:hover {
     color: white;
     background: rgba(0, 0, 0, 0.575);
