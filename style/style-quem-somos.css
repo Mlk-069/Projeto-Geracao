@@ -30,10 +30,10 @@
 }
 :root {
     --cor1: white;
-    --cor2: black;
-    --cor3: ;
-    --cor4: ;
-    --cor5: ;
+    --cor2: rgb(240, 235, 235);
+    --cor3: black;
+    --cor4: rgb(220, 209, 209);
+    --cor5: rgb(73, 24, 24);
     --cor6: ;
     
     --font-padrao: Arial, Helvetica, sans-serif;
@@ -45,7 +45,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     text-indent: 20px;
-    background: rgb(73, 24, 24);
+    background: var(--cor5);
 }
 header, h1, nav, main, aside, article, section, footer {
     display: flex;
@@ -81,21 +81,25 @@ a.navegacao{
     transition-duration: .9s;
 }
 a.navegacao:hover {
-    color: var(--cor2);
+    color: var(--cor3);
     background: var(--cor1);
-    box-shadow: 0px 2px 10px var(--cor2);
-    text-shadow: 0px 2px 10px var(--cor2);
+    box-shadow: 0px 2px 10px var(--cor3);
+    text-shadow: 0px 2px 10px var(--cor3);
 }
 main{
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
 }
-section#conteudo{
-    background: rgb(240, 235, 235);
+main h1{
+    background: var(--cor2);
+    font-size: 1.2em;
+    flex: 1 1 100vw;
+}
+section.conteudo{
+    flex: 10 7 50vw;
+    background: var(--cor2);
     margin: 0px;
-    flex: 20 7 50vw;
-    height: 91vh; 
     text-align: justify;
     align-items: center;
     padding: 10px;
@@ -108,13 +112,14 @@ img#banda{
     border-radius: 5px;
     
 }
-section#finalizacao{
+section.finalizacao{
+    text-align: justify;
     padding: 10px;
-    background: rgb(240, 235, 235);
+    background: var(--cor2);
     flex: 10 1 100vw;
 }
 article{
-    background: rgb(220, 209, 209);
+    background: var(--cor4);
     height: 200px;
     flex: 2 1 80vw;
     justify-content: space-around;
@@ -142,14 +147,14 @@ nav.rodape{
         height: 70px;
     }
     main{
-        height: 100vh;
+        height: 60vh;
         width: 100vw;
         margin-top: 35px;
         flex-shrink: 10;
     }
     
     img#banda{
-        width: 90vw;
+        height: 70vw;
         flex: 1 1 100vw;
         margin: 3px;
         padding: 0px;
