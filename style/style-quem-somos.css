@@ -30,11 +30,11 @@
 }
 :root {
     --cor1: white;
-    --cor2: rgb(240, 235, 235);
-    --cor3: black;
-    --cor4: rgb(220, 209, 209);
-    --cor5: rgb(73, 24, 24);
-    --cor6: ;
+    --cor2: black;
+    --cor3: #A5824E;
+    --cor4: #2A261B;
+    --cor5: #A9785B;
+    --cor6: #DACBAC;
     
     --font-padrao: Arial, Helvetica, sans-serif;
     --font-especial-1: 'neuton';
@@ -45,60 +45,78 @@ body {
     display: flex;
     flex-wrap: wrap;
     text-indent: 20px;
-    background: var(--cor5);
+    background: var(--cor6);
 }
 header, h1, nav, main, aside, article, section, footer {
     display: flex;
     margin: 0px; 
 }
-header {
-    margin: 0px 0px;
-    font-family: var(--font-especial-1);
-    color:var(--cor1);
-    flex: 1 1 20vw;
-    height: 70px;
-    align-items:  center;
-    font-style: italic;
-    padding: 10px;
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.541);
-}
-nav{
-    font-family: var(--font-especial-2);
-    flex: 1 1 65vw;
-    height: 70px;
-    align-items: center;
-    justify-content: end;
-    padding: 10px;
-    margin: 0px;
-}
-a.navegacao{
-    color: var(--cor1);
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 10px;
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.514);
-    text-decoration: none;
-    transition-duration: .9s;
-}
-a.navegacao:hover {
-    color: var(--cor3);
-    background: var(--cor1);
-    box-shadow: 0px 2px 10px var(--cor3);
-    text-shadow: 0px 2px 10px var(--cor3);
-}
+    header {
+        font-family: var(--font-especial-1);
+        color:var(--cor1);
+        background: var(--cor3);
+        flex: 1 1 20vw;
+        height: 50px;
+        align-items:  center;
+        margin: 0px 0px;
+        padding: 10px;
+        font-style: italic;
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.541);
+    }
+    nav{
+        font-family: var(--font-especial-2);
+        background: var(--cor3);
+        flex: 1 1 65vw;
+        height: 50px;
+        align-items: center;
+        justify-content: end;
+        padding: 10px;
+        margin: 0px;
+    }
+    a.navegacao{
+        color: var(--cor2);
+        font-weight: bold;
+        padding: 5px 15px;
+        border-radius: 10px;
+        text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.514);
+        text-decoration: none;
+        transition-duration: .9s;
+    }
+    a.navegacao:hover {
+        color: var(--cor1);
+        background: var(--cor4);
+        box-shadow: 0px 2px 10px var(--cor2);
+        text-shadow: 0px 2px 10px var(--cor2);
+        height: 30px;
+    }
+    a#agenda{
+        height: 30px;
+        background: var(--cor2);
+        color: var(--cor1);
+        text-shadow: 0px 1px 10px rgb(141, 134, 134);
+        box-shadow: 0px 2px 5px black;
+        transition-duration: .9s;
+    }
+    a#agenda:hover{
+        height: 34px;
+        color: var(--cor1);
+        box-shadow: 0px 2px 10px var(--cor2);
+        text-shadow: 0px 2px 10px var(--cor1);
+    }
 main{
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
+    box-shadow: 0px 2px 10px ;
 }
 main h1{
-    background: var(--cor2);
+    background: var(--cor6);
     font-size: 1.2em;
     flex: 1 1 100vw;
 }
 section.conteudo{
     flex: 10 7 50vw;
-    background: var(--cor2);
+    background: var(--cor6);
     margin: 0px;
     text-align: justify;
     align-items: center;
@@ -115,11 +133,11 @@ img#banda{
 section.finalizacao{
     text-align: justify;
     padding: 10px;
-    background: var(--cor2);
+    background: var(--cor6);
     flex: 10 1 100vw;
 }
 article{
-    background: var(--cor4);
+    background: var(--cor6);
     height: 200px;
     flex: 2 1 80vw;
     justify-content: space-around;
@@ -130,26 +148,45 @@ nav.rodape{
     height: 50px;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0px 5px 10px black;
     animation: rodape 15s;
     animation-iteration-count: infinite;
 }
-.rodape > a:hover{
-    opacity: 80%;
+nav.rodape img{
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.253);
 }
-
+.rodape img:hover{
+    border: 1px solid white;
+    transition: 1.2s;
+    box-shadow: 0px 2px 20px black;
+}
 @media  screen and (max-width: 885px){
     body{
         display: flex;
         flex-wrap: wrap;
     }
     header{
+        display: flex;
+        align-items: center;
         width: 30vw;
-        height: 70px;
+        height: 50px;
+    }
+    header h1{
+        padding-top: 20px;
+    }
+    nav{
+        flex: 1 1 100vw;
+    }
+    nav a.navegacao {
+        font-size: .7em;
     }
     main{
         height: 60vh;
         width: 100vw;
-        margin-top: 35px;
+        padding-top: 20px;
         flex-shrink: 10;
     }
     
