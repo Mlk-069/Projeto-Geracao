@@ -9,6 +9,20 @@
     font-family: 'roboto';
     src: url('/font/Roboto-VariableFont_wdth,wght.ttf'), format('truetype');
 }
+@keyframes rodape {
+    0%{
+        color: black;
+        background-image: url('/image/body-background.jpg');
+    }
+    50%{
+        color: white;
+        background-image: url('/image/Wallpaper-navegação.jpg');
+    }
+    100%{
+        color: black;
+        background-image: url('/image/body-background.jpg');
+    }
+}
 :root {
     --cor1: white;
     --cor2: black;
@@ -114,5 +128,24 @@ section.image{
     }
     nav a.navegacao{
         font-size: 0.7em;
+    }
+    section{
+        flex: 1 1 100vw;
+        height: 80vh;
+    }
+    article{
+        display: flex;
+        flex: 1 1 100vw;
+        background: var(--cor3);
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    nav.rodape{
+        display: flex;
+        flex: 1 1 100vw;
+        justify-content: space-around;
+        animation: rodape 10s;
+        animation-iteration-count: infinite;
     }
 }
